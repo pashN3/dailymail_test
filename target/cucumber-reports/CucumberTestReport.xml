@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="30.035327">
+    <testcase classname="User navigates to Mailtravel" name="User navigates to MailTravel" time="4.296237">
+        <system-out>
+            <![CDATA[Given User opens browser....................................................passed
+When I naviagte to mailtravel page..........................................passed
+Then the mailtavel page is displayed........................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="User searches for a destination" name="User searches for a destination" time="25.73909">
+        <failure message="org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=/html/body/div[3]/div/div[2]/div[2]/div/div[2]/div[2]/div/div[1]/a/div[3]/button&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'l7zk1m13-lon', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-81-generic', java.version: '11.0.11'&#10;Driver info: driver.version: RemoteWebDriver&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)&#10;&#9;at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)&#10;&#9;at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)&#10;&#9;at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)&#10;&#9;at com.sun.proxy.$Proxy21.isDisplayed(Unknown Source)&#10;&#9;at PageObjects.MoreInfoPage.validateOptions(MoreInfoPage.java:36)&#10;&#9;at StepDefinitions.MoreInfoSteps.the_options_are_displayed(MoreInfoSteps.java:38)&#10;&#9;at ✽.When the options are displayed(more-info.feature:6)&#10;">
+            <![CDATA[Given User types 'India' in search..........................................passed
+When the options are displayed..............................................failed
+And user clicks more info on first option...................................skipped
+Then the telephone number...................................................skipped
+And price...................................................................skipped
+And days are dsiplayed......................................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=/html/body/div[3]/div/div[2]/div[2]/div/div[2]/div[2]/div/div[1]/a/div[3]/button
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'l7zk1m13-lon', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-81-generic', java.version: '11.0.11'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy21.isDisplayed(Unknown Source)
+	at PageObjects.MoreInfoPage.validateOptions(MoreInfoPage.java:36)
+	at StepDefinitions.MoreInfoSteps.the_options_are_displayed(MoreInfoSteps.java:38)
+	at ✽.When the options are displayed(more-info.feature:6)
+]]>
+        </failure>
+    </testcase>
+</testsuite>
